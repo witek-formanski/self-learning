@@ -54,9 +54,14 @@ double func(double x){
     return pow(x,2);
 }
 
+double func2(double x){
+    return 3*pow(x,3)*sin(x)
+}
+
 
 int main() {
 
     cout << monte_carlo_integral(func, 3, 7, 1000);
+    cout << monte_carlo_integral(func2, 3, 7, 1000);
 
 }
